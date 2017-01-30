@@ -3,6 +3,7 @@
 #include <sys/wait.h>
 #include <string.h>
 #include <signal.h>
+#include <stdlib.h>
 
 /**
  * @header void handler(int);
@@ -19,7 +20,6 @@ void handler(int);
 /**
  * Variables globales
  */
- int fin = 0;
 
 
 /**
@@ -29,7 +29,7 @@ void handler(int);
  * la funcion getpid().
  *
  * @note Despues de esto, creamos un for que sera
- * recorrido tres veces tal y como indica el enunciado.
+ * recorrido tres veces para obtener 3 hijos.
  *
  * @note tal y como indica el manual de fork, se devolvera
  * un 0 al proceso hijo, por ello, si pid_t es 0 significa
@@ -42,7 +42,10 @@ void handler(int);
 int main()
 {
     pid_t child_id ;
+    int fin = 0;
     struct sigaction act;
+
+    system("clear");
 
     for (int i = 0; i < 3; ++i) {
             child_id = fork();
@@ -50,9 +53,10 @@ int main()
                 /**
                  * Children.
                  */
-                sleep(5);
+                printf("Proceso hijo %d se ha creado\n",getpid());
+                sleep(5+i);
                 return 0;
-            } else continue;
+            }
     }
 
     memset(&act,0, sizeof(act));
@@ -60,8 +64,10 @@ int main()
     act.sa_flags = 0;
     sigaction(SIGCHLD,&act,NULL);
 
-    while (fin < 3)
+    while (fin < 3) {
         pause();
+        fin = fin + 1;
+    }
 
     return 0;
 }
@@ -69,8 +75,7 @@ int main()
 void handler(int signum){
     switch (signum){
         case SIGCHLD:
-            fin = fin + 1;
-            printf("Un proceso hijo a finalizado\n");
+            printf("Un proceso hijo ha finalizado\n");
             break;
         default:
             break;
