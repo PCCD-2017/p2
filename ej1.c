@@ -3,7 +3,6 @@
 #include <sys/wait.h>
 #include <string.h>
 #include <signal.h>
-#include <stdlib.h>
 
 /**
  * @header void handler(int);
@@ -16,11 +15,9 @@
 
 void handler(int);
 
-
 /**
  * Variables globales
  */
-
 
 /**
  * @note Comenzamos creando la variable pid_t,
@@ -35,9 +32,9 @@ void handler(int);
  * un 0 al proceso hijo, por ello, si pid_t es 0 significa
  * que estamos en el proceso hijo.
  *
- *
  * @return 0
  */
+
 
 int main()
 {
@@ -59,10 +56,10 @@ int main()
             }
     }
 
-    memset(&act,0, sizeof(act));
+    memset(&act, 0, sizeof(act));
     act.sa_handler = handler;
     act.sa_flags = 0;
-    sigaction(SIGCHLD,&act,NULL);
+    sigaction(SIGCHLD, &act, NULL);
 
     while (fin < 3) {
         pause();
@@ -72,8 +69,8 @@ int main()
     return 0;
 }
 
-void handler(int signum){
-    switch (signum){
+void handler(int signum) {
+    switch (signum) {
         case SIGCHLD:
             printf("Un proceso hijo ha finalizado\n");
             break;
