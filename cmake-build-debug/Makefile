@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Users/ruben/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/163.10154.43/CLion.app/Contents/bin/cmake/bin/cmake"
+CMAKE_COMMAND = "/Users/david/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/163.10154.43/CLion.app/Contents/bin/cmake/bin/cmake"
 
 # The command to remove a file.
-RM = "/Users/ruben/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/163.10154.43/CLion.app/Contents/bin/cmake/bin/cmake" -E remove -f
+RM = "/Users/david/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/163.10154.43/CLion.app/Contents/bin/cmake/bin/cmake" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ruben/Proyectos/PCCD/p2
+CMAKE_SOURCE_DIR = /Users/david/ClionProjects/p2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ruben/Proyectos/PCCD/p2/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/david/ClionProjects/p2/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/ruben/Proyectos/PCCD/p2/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"/Users/ruben/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/163.10154.43/CLion.app/Contents/bin/cmake/bin/cmake" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"/Users/david/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/163.10154.43/CLion.app/Contents/bin/cmake/bin/cmake" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"/Users/ruben/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/163.10154.43/CLion.app/Contents/bin/cmake/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+	"/Users/david/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/163.10154.43/CLion.app/Contents/bin/cmake/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ruben/Proyectos/PCCD/p2/cmake-build-debug/CMakeFiles /Users/ruben/Proyectos/PCCD/p2/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/david/ClionProjects/p2/cmake-build-debug/CMakeFiles /Users/david/ClionProjects/p2/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ruben/Proyectos/PCCD/p2/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/david/ClionProjects/p2/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -135,6 +135,19 @@ ej3: cmake_check_build_system
 ej3/fast:
 	$(MAKE) -f CMakeFiles/ej3.dir/build.make CMakeFiles/ej3.dir/build
 .PHONY : ej3/fast
+
+#=============================================================================
+# Target rules for targets named p2ej4
+
+# Build rule for target.
+p2ej4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 p2ej4
+.PHONY : p2ej4
+
+# fast build rule for target.
+p2ej4/fast:
+	$(MAKE) -f CMakeFiles/p2ej4.dir/build.make CMakeFiles/p2ej4.dir/build
+.PHONY : p2ej4/fast
 
 #=============================================================================
 # Target rules for targets named ej2
@@ -279,6 +292,7 @@ p2_ej4.o: p2_ej4.c.o
 
 # target to build an object file
 p2_ej4.c.o:
+	$(MAKE) -f CMakeFiles/p2ej4.dir/build.make CMakeFiles/p2ej4.dir/p2_ej4.c.o
 	$(MAKE) -f CMakeFiles/ej1.dir/build.make CMakeFiles/ej1.dir/p2_ej4.c.o
 .PHONY : p2_ej4.c.o
 
@@ -288,6 +302,7 @@ p2_ej4.i: p2_ej4.c.i
 
 # target to preprocess a source file
 p2_ej4.c.i:
+	$(MAKE) -f CMakeFiles/p2ej4.dir/build.make CMakeFiles/p2ej4.dir/p2_ej4.c.i
 	$(MAKE) -f CMakeFiles/ej1.dir/build.make CMakeFiles/ej1.dir/p2_ej4.c.i
 .PHONY : p2_ej4.c.i
 
@@ -297,6 +312,7 @@ p2_ej4.s: p2_ej4.c.s
 
 # target to generate assembly for a file
 p2_ej4.c.s:
+	$(MAKE) -f CMakeFiles/p2ej4.dir/build.make CMakeFiles/p2ej4.dir/p2_ej4.c.s
 	$(MAKE) -f CMakeFiles/ej1.dir/build.make CMakeFiles/ej1.dir/p2_ej4.c.s
 .PHONY : p2_ej4.c.s
 
@@ -306,9 +322,10 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... rebuild_cache"
 	@echo "... ej4"
 	@echo "... ej3"
-	@echo "... rebuild_cache"
+	@echo "... p2ej4"
 	@echo "... ej2"
 	@echo "... edit_cache"
 	@echo "... ej1"

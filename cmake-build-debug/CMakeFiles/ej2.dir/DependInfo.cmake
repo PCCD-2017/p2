@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/ruben/Proyectos/PCCD/p2/ej2.c" "/Users/ruben/Proyectos/PCCD/p2/cmake-build-debug/CMakeFiles/ej2.dir/ej2.c.o"
+  "/Users/david/ClionProjects/p2/ej2.c" "/Users/david/ClionProjects/p2/cmake-build-debug/CMakeFiles/ej2.dir/ej2.c.o"
   )
 set(CMAKE_C_COMPILER_ID "Clang")
 
