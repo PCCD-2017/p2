@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ej3
+
+# Build rule for target.
+ej3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ej3
+.PHONY : ej3
+
+# fast build rule for target.
+ej3/fast:
+	$(MAKE) -f CMakeFiles/ej3.dir/build.make CMakeFiles/ej3.dir/build
+.PHONY : ej3/fast
+
+#=============================================================================
 # Target rules for targets named ej2
 
 # Build rule for target.
@@ -190,12 +203,40 @@ ej2.c.s:
 	$(MAKE) -f CMakeFiles/ej2.dir/build.make CMakeFiles/ej2.dir/ej2.c.s
 .PHONY : ej2.c.s
 
+ej3.o: ej3.c.o
+
+.PHONY : ej3.o
+
+# target to build an object file
+ej3.c.o:
+	$(MAKE) -f CMakeFiles/ej3.dir/build.make CMakeFiles/ej3.dir/ej3.c.o
+.PHONY : ej3.c.o
+
+ej3.i: ej3.c.i
+
+.PHONY : ej3.i
+
+# target to preprocess a source file
+ej3.c.i:
+	$(MAKE) -f CMakeFiles/ej3.dir/build.make CMakeFiles/ej3.dir/ej3.c.i
+.PHONY : ej3.c.i
+
+ej3.s: ej3.c.s
+
+.PHONY : ej3.s
+
+# target to generate assembly for a file
+ej3.c.s:
+	$(MAKE) -f CMakeFiles/ej3.dir/build.make CMakeFiles/ej3.dir/ej3.c.s
+.PHONY : ej3.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... ej3"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ej2"
@@ -206,6 +247,9 @@ help:
 	@echo "... ej2.o"
 	@echo "... ej2.i"
 	@echo "... ej2.s"
+	@echo "... ej3.o"
+	@echo "... ej3.i"
+	@echo "... ej3.s"
 .PHONY : help
 
 
