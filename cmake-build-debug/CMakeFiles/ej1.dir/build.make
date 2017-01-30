@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Users/david/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/163.10154.43/CLion.app/Contents/bin/cmake/bin/cmake"
+CMAKE_COMMAND = "/Users/ruben/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/163.10154.43/CLion.app/Contents/bin/cmake/bin/cmake"
 
 # The command to remove a file.
-RM = "/Users/david/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/163.10154.43/CLion.app/Contents/bin/cmake/bin/cmake" -E remove -f
+RM = "/Users/ruben/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/163.10154.43/CLion.app/Contents/bin/cmake/bin/cmake" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/david/ClionProjects/p2
+CMAKE_SOURCE_DIR = /Users/ruben/Proyectos/PCCD/p2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/david/ClionProjects/p2/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ruben/Proyectos/PCCD/p2/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ej1.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/ej1.dir/flags.make
 
 CMakeFiles/ej1.dir/ej1.c.o: CMakeFiles/ej1.dir/flags.make
 CMakeFiles/ej1.dir/ej1.c.o: ../ej1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/david/ClionProjects/p2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ej1.dir/ej1.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ej1.dir/ej1.c.o   -c /Users/david/ClionProjects/p2/ej1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ruben/Proyectos/PCCD/p2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ej1.dir/ej1.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ej1.dir/ej1.c.o   -c /Users/ruben/Proyectos/PCCD/p2/ej1.c
 
 CMakeFiles/ej1.dir/ej1.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ej1.dir/ej1.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/david/ClionProjects/p2/ej1.c > CMakeFiles/ej1.dir/ej1.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ruben/Proyectos/PCCD/p2/ej1.c > CMakeFiles/ej1.dir/ej1.c.i
 
 CMakeFiles/ej1.dir/ej1.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ej1.dir/ej1.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/david/ClionProjects/p2/ej1.c -o CMakeFiles/ej1.dir/ej1.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ruben/Proyectos/PCCD/p2/ej1.c -o CMakeFiles/ej1.dir/ej1.c.s
 
 CMakeFiles/ej1.dir/ej1.c.o.requires:
 
@@ -81,17 +81,69 @@ CMakeFiles/ej1.dir/ej1.c.o.provides: CMakeFiles/ej1.dir/ej1.c.o.requires
 CMakeFiles/ej1.dir/ej1.c.o.provides.build: CMakeFiles/ej1.dir/ej1.c.o
 
 
+CMakeFiles/ej1.dir/ej4.c.o: CMakeFiles/ej1.dir/flags.make
+CMakeFiles/ej1.dir/ej4.c.o: ../ej4.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ruben/Proyectos/PCCD/p2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ej1.dir/ej4.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ej1.dir/ej4.c.o   -c /Users/ruben/Proyectos/PCCD/p2/ej4.c
+
+CMakeFiles/ej1.dir/ej4.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ej1.dir/ej4.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ruben/Proyectos/PCCD/p2/ej4.c > CMakeFiles/ej1.dir/ej4.c.i
+
+CMakeFiles/ej1.dir/ej4.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ej1.dir/ej4.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ruben/Proyectos/PCCD/p2/ej4.c -o CMakeFiles/ej1.dir/ej4.c.s
+
+CMakeFiles/ej1.dir/ej4.c.o.requires:
+
+.PHONY : CMakeFiles/ej1.dir/ej4.c.o.requires
+
+CMakeFiles/ej1.dir/ej4.c.o.provides: CMakeFiles/ej1.dir/ej4.c.o.requires
+	$(MAKE) -f CMakeFiles/ej1.dir/build.make CMakeFiles/ej1.dir/ej4.c.o.provides.build
+.PHONY : CMakeFiles/ej1.dir/ej4.c.o.provides
+
+CMakeFiles/ej1.dir/ej4.c.o.provides.build: CMakeFiles/ej1.dir/ej4.c.o
+
+
+CMakeFiles/ej1.dir/p2_ej4.c.o: CMakeFiles/ej1.dir/flags.make
+CMakeFiles/ej1.dir/p2_ej4.c.o: ../p2_ej4.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ruben/Proyectos/PCCD/p2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ej1.dir/p2_ej4.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ej1.dir/p2_ej4.c.o   -c /Users/ruben/Proyectos/PCCD/p2/p2_ej4.c
+
+CMakeFiles/ej1.dir/p2_ej4.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ej1.dir/p2_ej4.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ruben/Proyectos/PCCD/p2/p2_ej4.c > CMakeFiles/ej1.dir/p2_ej4.c.i
+
+CMakeFiles/ej1.dir/p2_ej4.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ej1.dir/p2_ej4.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ruben/Proyectos/PCCD/p2/p2_ej4.c -o CMakeFiles/ej1.dir/p2_ej4.c.s
+
+CMakeFiles/ej1.dir/p2_ej4.c.o.requires:
+
+.PHONY : CMakeFiles/ej1.dir/p2_ej4.c.o.requires
+
+CMakeFiles/ej1.dir/p2_ej4.c.o.provides: CMakeFiles/ej1.dir/p2_ej4.c.o.requires
+	$(MAKE) -f CMakeFiles/ej1.dir/build.make CMakeFiles/ej1.dir/p2_ej4.c.o.provides.build
+.PHONY : CMakeFiles/ej1.dir/p2_ej4.c.o.provides
+
+CMakeFiles/ej1.dir/p2_ej4.c.o.provides.build: CMakeFiles/ej1.dir/p2_ej4.c.o
+
+
 # Object files for target ej1
 ej1_OBJECTS = \
-"CMakeFiles/ej1.dir/ej1.c.o"
+"CMakeFiles/ej1.dir/ej1.c.o" \
+"CMakeFiles/ej1.dir/ej4.c.o" \
+"CMakeFiles/ej1.dir/p2_ej4.c.o"
 
 # External object files for target ej1
 ej1_EXTERNAL_OBJECTS =
 
 ej1: CMakeFiles/ej1.dir/ej1.c.o
+ej1: CMakeFiles/ej1.dir/ej4.c.o
+ej1: CMakeFiles/ej1.dir/p2_ej4.c.o
 ej1: CMakeFiles/ej1.dir/build.make
 ej1: CMakeFiles/ej1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/david/ClionProjects/p2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ej1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ruben/Proyectos/PCCD/p2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable ej1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ej1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -100,6 +152,8 @@ CMakeFiles/ej1.dir/build: ej1
 .PHONY : CMakeFiles/ej1.dir/build
 
 CMakeFiles/ej1.dir/requires: CMakeFiles/ej1.dir/ej1.c.o.requires
+CMakeFiles/ej1.dir/requires: CMakeFiles/ej1.dir/ej4.c.o.requires
+CMakeFiles/ej1.dir/requires: CMakeFiles/ej1.dir/p2_ej4.c.o.requires
 
 .PHONY : CMakeFiles/ej1.dir/requires
 
@@ -108,6 +162,6 @@ CMakeFiles/ej1.dir/clean:
 .PHONY : CMakeFiles/ej1.dir/clean
 
 CMakeFiles/ej1.dir/depend:
-	cd /Users/david/ClionProjects/p2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/david/ClionProjects/p2 /Users/david/ClionProjects/p2 /Users/david/ClionProjects/p2/cmake-build-debug /Users/david/ClionProjects/p2/cmake-build-debug /Users/david/ClionProjects/p2/cmake-build-debug/CMakeFiles/ej1.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/ruben/Proyectos/PCCD/p2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ruben/Proyectos/PCCD/p2 /Users/ruben/Proyectos/PCCD/p2 /Users/ruben/Proyectos/PCCD/p2/cmake-build-debug /Users/ruben/Proyectos/PCCD/p2/cmake-build-debug /Users/ruben/Proyectos/PCCD/p2/cmake-build-debug/CMakeFiles/ej1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ej1.dir/depend
 

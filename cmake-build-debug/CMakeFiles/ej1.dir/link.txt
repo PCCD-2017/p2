@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/cc  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/ej1.dir/ej1.c.o  -o ej1  
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/ej1.dir/ej1.c.o CMakeFiles/ej1.dir/ej4.c.o CMakeFiles/ej1.dir/p2_ej4.c.o  -o ej1  

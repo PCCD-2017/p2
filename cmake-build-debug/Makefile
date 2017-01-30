@@ -39,38 +39,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Users/david/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/163.10154.43/CLion.app/Contents/bin/cmake/bin/cmake"
+CMAKE_COMMAND = "/Users/ruben/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/163.10154.43/CLion.app/Contents/bin/cmake/bin/cmake"
 
 # The command to remove a file.
-RM = "/Users/david/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/163.10154.43/CLion.app/Contents/bin/cmake/bin/cmake" -E remove -f
+RM = "/Users/ruben/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/163.10154.43/CLion.app/Contents/bin/cmake/bin/cmake" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/david/ClionProjects/p2
+CMAKE_SOURCE_DIR = /Users/ruben/Proyectos/PCCD/p2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/david/ClionProjects/p2/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ruben/Proyectos/PCCD/p2/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"/Users/david/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/163.10154.43/CLion.app/Contents/bin/cmake/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"/Users/david/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/163.10154.43/CLion.app/Contents/bin/cmake/bin/cmake" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"/Users/ruben/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/163.10154.43/CLion.app/Contents/bin/cmake/bin/cmake" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -78,11 +67,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	"/Users/ruben/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/163.10154.43/CLion.app/Contents/bin/cmake/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/david/ClionProjects/p2/cmake-build-debug/CMakeFiles /Users/david/ClionProjects/p2/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ruben/Proyectos/PCCD/p2/cmake-build-debug/CMakeFiles /Users/ruben/Proyectos/PCCD/p2/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/david/ClionProjects/p2/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ruben/Proyectos/PCCD/p2/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -109,6 +109,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named ej4
+
+# Build rule for target.
+ej4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ej4
+.PHONY : ej4
+
+# fast build rule for target.
+ej4/fast:
+	$(MAKE) -f CMakeFiles/ej4.dir/build.make CMakeFiles/ej4.dir/build
+.PHONY : ej4/fast
 
 #=============================================================================
 # Target rules for targets named ej3
@@ -230,16 +243,74 @@ ej3.c.s:
 	$(MAKE) -f CMakeFiles/ej3.dir/build.make CMakeFiles/ej3.dir/ej3.c.s
 .PHONY : ej3.c.s
 
+ej4.o: ej4.c.o
+
+.PHONY : ej4.o
+
+# target to build an object file
+ej4.c.o:
+	$(MAKE) -f CMakeFiles/ej4.dir/build.make CMakeFiles/ej4.dir/ej4.c.o
+	$(MAKE) -f CMakeFiles/ej1.dir/build.make CMakeFiles/ej1.dir/ej4.c.o
+.PHONY : ej4.c.o
+
+ej4.i: ej4.c.i
+
+.PHONY : ej4.i
+
+# target to preprocess a source file
+ej4.c.i:
+	$(MAKE) -f CMakeFiles/ej4.dir/build.make CMakeFiles/ej4.dir/ej4.c.i
+	$(MAKE) -f CMakeFiles/ej1.dir/build.make CMakeFiles/ej1.dir/ej4.c.i
+.PHONY : ej4.c.i
+
+ej4.s: ej4.c.s
+
+.PHONY : ej4.s
+
+# target to generate assembly for a file
+ej4.c.s:
+	$(MAKE) -f CMakeFiles/ej4.dir/build.make CMakeFiles/ej4.dir/ej4.c.s
+	$(MAKE) -f CMakeFiles/ej1.dir/build.make CMakeFiles/ej1.dir/ej4.c.s
+.PHONY : ej4.c.s
+
+p2_ej4.o: p2_ej4.c.o
+
+.PHONY : p2_ej4.o
+
+# target to build an object file
+p2_ej4.c.o:
+	$(MAKE) -f CMakeFiles/ej1.dir/build.make CMakeFiles/ej1.dir/p2_ej4.c.o
+.PHONY : p2_ej4.c.o
+
+p2_ej4.i: p2_ej4.c.i
+
+.PHONY : p2_ej4.i
+
+# target to preprocess a source file
+p2_ej4.c.i:
+	$(MAKE) -f CMakeFiles/ej1.dir/build.make CMakeFiles/ej1.dir/p2_ej4.c.i
+.PHONY : p2_ej4.c.i
+
+p2_ej4.s: p2_ej4.c.s
+
+.PHONY : p2_ej4.s
+
+# target to generate assembly for a file
+p2_ej4.c.s:
+	$(MAKE) -f CMakeFiles/ej1.dir/build.make CMakeFiles/ej1.dir/p2_ej4.c.s
+.PHONY : p2_ej4.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... ej4"
 	@echo "... ej3"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ej2"
+	@echo "... edit_cache"
 	@echo "... ej1"
 	@echo "... ej1.o"
 	@echo "... ej1.i"
@@ -250,6 +321,12 @@ help:
 	@echo "... ej3.o"
 	@echo "... ej3.i"
 	@echo "... ej3.s"
+	@echo "... ej4.o"
+	@echo "... ej4.i"
+	@echo "... ej4.s"
+	@echo "... p2_ej4.o"
+	@echo "... p2_ej4.i"
+	@echo "... p2_ej4.s"
 .PHONY : help
 
 
