@@ -3,7 +3,14 @@
 #include <sys/wait.h>
 #include <string.h>
 #include <signal.h>
-#include <stdlib.h>
+
+
+/**
+ * @dudas_Duque: ¿Porque se detecta la finaliazación
+ * de dos procesos en lugar de tres?
+ */
+
+
 
 
 /**
@@ -21,7 +28,7 @@ void handler(int);
 /**
  * Variables globales
  */
- int count = 0;
+ int fin = 0;
 
 
 /**
@@ -44,29 +51,26 @@ void handler(int);
 int main()
 {
     pid_t child_id ;
+    struct sigaction act;
 
     for (int i = 0; i < 3; ++i) {
-        printf("su antes\n");
-        child_id = fork() ;
-        if (child_id  == 0) {
-            printf("Se ha creado un proceso hijo %d\n",getpid());
-            sleep(5);
-            exit(0);
-        }
+            child_id = fork();
+            if (child_id == 0){
+                /**
+                 * Children.
+                 */
+                sleep(5);
+                return 0;
+            } else continue;
     }
 
-    struct sigaction act;
     memset(&act,0, sizeof(act));
     act.sa_handler = handler;
     act.sa_flags = 0;
+    sigaction(SIGCHLD,&act,NULL);
 
-    for (int i = 3; i < 30; ++i) {
-        sigaction(i, &act, NULL);
-    }
-
-    for (int j = 0; j < 3; ++j) {
+    while (fin < 3)
         pause();
-    }
 
     return 0;
 }
@@ -74,7 +78,7 @@ int main()
 void handler(int signum){
     switch (signum){
         case SIGCHLD:
-            count =  count + 1;
+            fin = fin + 1;
             printf("Un proceso hijo a finalizado\n");
             break;
         default:
