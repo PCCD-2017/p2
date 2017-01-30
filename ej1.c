@@ -4,15 +4,6 @@
 #include <string.h>
 #include <signal.h>
 
-
-/**
- * @dudas_Duque: ¿Porque se detecta la finaliazación
- * de dos procesos en lugar de tres?
- */
-
-
-
-
 /**
  * @header void handler(int);
  *
@@ -24,12 +15,10 @@
 
 void handler(int);
 
-
 /**
  * Variables globales
  */
- int fin = 0;
-
+int fin = 0;
 
 /**
  * @note Comenzamos creando la variable pid_t,
@@ -44,30 +33,28 @@ void handler(int);
  * un 0 al proceso hijo, por ello, si pid_t es 0 significa
  * que estamos en el proceso hijo.
  *
- *
  * @return 0
  */
 
-int main()
-{
-    pid_t child_id ;
+int main() {
+    pid_t child_id;
     struct sigaction act;
 
     for (int i = 0; i < 3; ++i) {
-            child_id = fork();
-            if (child_id == 0){
-                /**
-                 * Children.
-                 */
-                sleep(5);
-                return 0;
-            } else continue;
+        child_id = fork();
+        if (child_id == 0) {
+            /**
+             * Children.
+             */
+            sleep(5);
+            return 0;
+        } else continue;
     }
 
-    memset(&act,0, sizeof(act));
+    memset(&act, 0, sizeof(act));
     act.sa_handler = handler;
     act.sa_flags = 0;
-    sigaction(SIGCHLD,&act,NULL);
+    sigaction(SIGCHLD, &act, NULL);
 
     while (fin < 3)
         pause();
@@ -75,8 +62,8 @@ int main()
     return 0;
 }
 
-void handler(int signum){
-    switch (signum){
+void handler(int signum) {
+    switch (signum) {
         case SIGCHLD:
             fin = fin + 1;
             printf("Un proceso hijo a finalizado\n");
