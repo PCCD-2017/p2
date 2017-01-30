@@ -46,7 +46,7 @@ int main() {
             /**
              * Children.
              */
-            sleep(5);
+            sleep(5+i);
             return 0;
         } else continue;
     }
@@ -66,7 +66,7 @@ void handler(int signum) {
     switch (signum) {
         case SIGCHLD:
             fin = fin + 1;
-            printf("Un proceso hijo a finalizado\n");
+            printf("Un proceso hijo ha finalizado\n");
             break;
         default:
             break;
