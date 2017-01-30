@@ -4,15 +4,6 @@
 #include <string.h>
 #include <signal.h>
 
-
-/**
- * @dudas_Duque: ¿Porque se detecta la finaliazación
- * de dos procesos en lugar de tres?
- */
-
-
-
-
 /**
  * @header void handler(int);
  *
