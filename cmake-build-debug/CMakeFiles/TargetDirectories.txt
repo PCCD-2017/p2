@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /Users/david/ClionProjects/p2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/david/ClionProjects/p2/cmake-build-debug/CMakeFiles/ej5.dir
 /Users/david/ClionProjects/p2/cmake-build-debug/CMakeFiles/ej4.dir
@@ -6,3 +7,12 @@
 /Users/david/ClionProjects/p2/cmake-build-debug/CMakeFiles/ej2.dir
 /Users/david/ClionProjects/p2/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/david/ClionProjects/p2/cmake-build-debug/CMakeFiles/ej1.dir
+=======
+/Users/ruben/Proyectos/PCCD/p2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/ruben/Proyectos/PCCD/p2/cmake-build-debug/CMakeFiles/ej4.dir
+/Users/ruben/Proyectos/PCCD/p2/cmake-build-debug/CMakeFiles/ej3.dir
+/Users/ruben/Proyectos/PCCD/p2/cmake-build-debug/CMakeFiles/p2ej4.dir
+/Users/ruben/Proyectos/PCCD/p2/cmake-build-debug/CMakeFiles/ej2.dir
+/Users/ruben/Proyectos/PCCD/p2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ruben/Proyectos/PCCD/p2/cmake-build-debug/CMakeFiles/ej1.dir
+>>>>>>> Stashed changes
