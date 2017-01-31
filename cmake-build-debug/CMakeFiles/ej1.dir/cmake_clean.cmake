@@ -1,8 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ej1.dir/ej1.c.o"
-  "CMakeFiles/ej1.dir/ej4.c.o"
-  "CMakeFiles/ej1.dir/p2_ej4.c.o"
-  "CMakeFiles/ej1.dir/ej5.c.o"
   "ej1.pdb"
   "ej1"
 )

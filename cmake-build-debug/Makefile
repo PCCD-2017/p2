@@ -276,7 +276,6 @@ ej4.o: ej4.c.o
 # target to build an object file
 ej4.c.o:
 	$(MAKE) -f CMakeFiles/ej4.dir/build.make CMakeFiles/ej4.dir/ej4.c.o
-	$(MAKE) -f CMakeFiles/ej1.dir/build.make CMakeFiles/ej1.dir/ej4.c.o
 .PHONY : ej4.c.o
 
 ej4.i: ej4.c.i
@@ -286,7 +285,6 @@ ej4.i: ej4.c.i
 # target to preprocess a source file
 ej4.c.i:
 	$(MAKE) -f CMakeFiles/ej4.dir/build.make CMakeFiles/ej4.dir/ej4.c.i
-	$(MAKE) -f CMakeFiles/ej1.dir/build.make CMakeFiles/ej1.dir/ej4.c.i
 .PHONY : ej4.c.i
 
 ej4.s: ej4.c.s
@@ -296,7 +294,6 @@ ej4.s: ej4.c.s
 # target to generate assembly for a file
 ej4.c.s:
 	$(MAKE) -f CMakeFiles/ej4.dir/build.make CMakeFiles/ej4.dir/ej4.c.s
-	$(MAKE) -f CMakeFiles/ej1.dir/build.make CMakeFiles/ej1.dir/ej4.c.s
 .PHONY : ej4.c.s
 
 ej5.o: ej5.c.o
@@ -333,7 +330,6 @@ p2_ej4.o: p2_ej4.c.o
 # target to build an object file
 p2_ej4.c.o:
 	$(MAKE) -f CMakeFiles/p2ej4.dir/build.make CMakeFiles/p2ej4.dir/p2_ej4.c.o
-	$(MAKE) -f CMakeFiles/ej1.dir/build.make CMakeFiles/ej1.dir/p2_ej4.c.o
 .PHONY : p2_ej4.c.o
 
 p2_ej4.i: p2_ej4.c.i
@@ -343,7 +339,6 @@ p2_ej4.i: p2_ej4.c.i
 # target to preprocess a source file
 p2_ej4.c.i:
 	$(MAKE) -f CMakeFiles/p2ej4.dir/build.make CMakeFiles/p2ej4.dir/p2_ej4.c.i
-	$(MAKE) -f CMakeFiles/ej1.dir/build.make CMakeFiles/ej1.dir/p2_ej4.c.i
 .PHONY : p2_ej4.c.i
 
 p2_ej4.s: p2_ej4.c.s
@@ -353,7 +348,6 @@ p2_ej4.s: p2_ej4.c.s
 # target to generate assembly for a file
 p2_ej4.c.s:
 	$(MAKE) -f CMakeFiles/p2ej4.dir/build.make CMakeFiles/p2ej4.dir/p2_ej4.c.s
-	$(MAKE) -f CMakeFiles/ej1.dir/build.make CMakeFiles/ej1.dir/p2_ej4.c.s
 .PHONY : p2_ej4.c.s
 
 # Help Target
