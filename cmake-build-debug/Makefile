@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ej5
+
+# Build rule for target.
+ej5: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ej5
+.PHONY : ej5
+
+# fast build rule for target.
+ej5/fast:
+	$(MAKE) -f CMakeFiles/ej5.dir/build.make CMakeFiles/ej5.dir/build
+.PHONY : ej5/fast
+
+#=============================================================================
 # Target rules for targets named ej4
 
 # Build rule for target.
@@ -286,6 +299,33 @@ ej4.c.s:
 	$(MAKE) -f CMakeFiles/ej1.dir/build.make CMakeFiles/ej1.dir/ej4.c.s
 .PHONY : ej4.c.s
 
+ej5.o: ej5.c.o
+
+.PHONY : ej5.o
+
+# target to build an object file
+ej5.c.o:
+	$(MAKE) -f CMakeFiles/ej5.dir/build.make CMakeFiles/ej5.dir/ej5.c.o
+.PHONY : ej5.c.o
+
+ej5.i: ej5.c.i
+
+.PHONY : ej5.i
+
+# target to preprocess a source file
+ej5.c.i:
+	$(MAKE) -f CMakeFiles/ej5.dir/build.make CMakeFiles/ej5.dir/ej5.c.i
+.PHONY : ej5.c.i
+
+ej5.s: ej5.c.s
+
+.PHONY : ej5.s
+
+# target to generate assembly for a file
+ej5.c.s:
+	$(MAKE) -f CMakeFiles/ej5.dir/build.make CMakeFiles/ej5.dir/ej5.c.s
+.PHONY : ej5.c.s
+
 p2_ej4.o: p2_ej4.c.o
 
 .PHONY : p2_ej4.o
@@ -323,6 +363,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... ej5"
 	@echo "... ej4"
 	@echo "... ej3"
 	@echo "... p2ej4"
@@ -341,6 +382,9 @@ help:
 	@echo "... ej4.o"
 	@echo "... ej4.i"
 	@echo "... ej4.s"
+	@echo "... ej5.o"
+	@echo "... ej5.i"
+	@echo "... ej5.s"
 	@echo "... p2_ej4.o"
 	@echo "... p2_ej4.i"
 	@echo "... p2_ej4.s"
