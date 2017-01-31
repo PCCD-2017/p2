@@ -3,6 +3,7 @@
 #include <sys/wait.h>
 #include <string.h>
 #include <signal.h>
+#include <stdlib.h>
 
 /**
  * @header void handler(int);
