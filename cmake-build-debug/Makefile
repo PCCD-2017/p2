@@ -176,6 +176,19 @@ ej2/fast:
 .PHONY : ej2/fast
 
 #=============================================================================
+# Target rules for targets named ej6
+
+# Build rule for target.
+ej6: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ej6
+.PHONY : ej6
+
+# fast build rule for target.
+ej6/fast:
+	$(MAKE) -f CMakeFiles/ej6.dir/build.make CMakeFiles/ej6.dir/build
+.PHONY : ej6/fast
+
+#=============================================================================
 # Target rules for targets named ej1
 
 # Build rule for target.
@@ -323,6 +336,33 @@ ej5.c.s:
 	$(MAKE) -f CMakeFiles/ej5.dir/build.make CMakeFiles/ej5.dir/ej5.c.s
 .PHONY : ej5.c.s
 
+ej6.o: ej6.c.o
+
+.PHONY : ej6.o
+
+# target to build an object file
+ej6.c.o:
+	$(MAKE) -f CMakeFiles/ej6.dir/build.make CMakeFiles/ej6.dir/ej6.c.o
+.PHONY : ej6.c.o
+
+ej6.i: ej6.c.i
+
+.PHONY : ej6.i
+
+# target to preprocess a source file
+ej6.c.i:
+	$(MAKE) -f CMakeFiles/ej6.dir/build.make CMakeFiles/ej6.dir/ej6.c.i
+.PHONY : ej6.c.i
+
+ej6.s: ej6.c.s
+
+.PHONY : ej6.s
+
+# target to generate assembly for a file
+ej6.c.s:
+	$(MAKE) -f CMakeFiles/ej6.dir/build.make CMakeFiles/ej6.dir/ej6.c.s
+.PHONY : ej6.c.s
+
 p2_ej4.o: p2_ej4.c.o
 
 .PHONY : p2_ej4.o
@@ -363,6 +403,7 @@ help:
 	@echo "... p2ej4"
 	@echo "... ej2"
 	@echo "... edit_cache"
+	@echo "... ej6"
 	@echo "... ej1"
 	@echo "... ej1.o"
 	@echo "... ej1.i"
@@ -379,6 +420,9 @@ help:
 	@echo "... ej5.o"
 	@echo "... ej5.i"
 	@echo "... ej5.s"
+	@echo "... ej6.o"
+	@echo "... ej6.i"
+	@echo "... ej6.s"
 	@echo "... p2_ej4.o"
 	@echo "... p2_ej4.i"
 	@echo "... p2_ej4.s"

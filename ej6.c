@@ -14,13 +14,12 @@
  * @return 0
  */
 
-int main(int argc, char* argv[]){
+int main(){
 
     char* alineacion[11] = {"De Gea", "Carvajal", "Ramos", "Piqué", "Jordi-Alba", "Busquets", "Nolito", "Isco", "Iniesta", "Silva", "Aspas"};
     int status,count = 0;
     pid_t child_aux,child_carvajal,child_ramos,child_pique, child_iniesta_silva;
 
-    system("clear");
     /**
      * DE GEA.
      */
@@ -30,11 +29,9 @@ int main(int argc, char* argv[]){
      * CARVAJAL, RAMOS, PIQUE.
      */
     for (int i = 1; i < 4; ++i) {
-        fflush(0);
         child_aux = fork();
         if (child_aux == 0){
-            printf("%s ",alineacion[i]);
-            return 0;
+            execl("p2ej4",alineacion[i]);
         } else{
             switch (i){
                 case 1:
@@ -60,12 +57,10 @@ int main(int argc, char* argv[]){
     /**
      * INIESTA,SILVA.
      */
-    fflush(0);
+
     child_aux = fork();
     if (child_aux == 0){
-        printf("%s ",alineacion[8]);
-        printf("%s ",alineacion[9]);
-        return 0;
+        execl("p2ej4",alineacion[8],alineacion[9]);
     } else{
         child_iniesta_silva = child_aux;
     }
@@ -82,6 +77,13 @@ int main(int argc, char* argv[]){
     printf("%s ",alineacion[5]);
     printf("%s ",alineacion[6]);
     printf("%s ",alineacion[7]);
+
+    while (count == 0){
+        child_aux = wait(&status);
+        count = count +1;
+    }
+
+    return 0;
 
     /**
      * ASPAS

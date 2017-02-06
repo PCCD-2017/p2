@@ -5,4 +5,5 @@
 /Users/ruben/Proyectos/PCCD/p2/cmake-build-debug/CMakeFiles/p2ej4.dir
 /Users/ruben/Proyectos/PCCD/p2/cmake-build-debug/CMakeFiles/ej2.dir
 /Users/ruben/Proyectos/PCCD/p2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ruben/Proyectos/PCCD/p2/cmake-build-debug/CMakeFiles/ej6.dir
 /Users/ruben/Proyectos/PCCD/p2/cmake-build-debug/CMakeFiles/ej1.dir

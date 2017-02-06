@@ -33,9 +33,9 @@ int main(int argc, char *argv[])
              * Children.
              */
             printf("Proceso hijo %d se ha creado\n",getpid());
-            execl("p2_ej4","Ay","mi","madre","el","bicho");
+            execl("p2ej4","Ay","mi","madre","el","bicho\n");
             sleep(5);
-            exit(EXIT_SUCCESS);
+            return 0;
         }
     }
 
